@@ -43,5 +43,13 @@ const questions = [
 ];
 
 function FlashCards() {
-  return <div>TODO</div>;
+  return (
+    <div>
+      {questions.map((q) => (
+        <div>
+          <p>{q.question}</p>
+        </div>
+      ))}
+    </div>
+  );
 }
